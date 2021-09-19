@@ -1,0 +1,106 @@
+{
+    "basic": {
+        "name": "Sethu",
+        "title": "Programmer",
+        "image": "",
+        "email": "sethusaran123@gmail.com",
+        "phone": "7094053324",
+        "url": "https://sethu.com",
+        "summary": "A summary of Sethu…",
+        "location": {
+            "address": "3/88,Rajaji nagar",
+            "postalCode": "500030",
+            "city": "Bangalore",
+            "countryCode": "IN",
+            "state": "Karnataka"
+        },
+        "profiles": [{
+            "network": "Linkedin",
+            "username": "john",
+            "url": "https://linedin.com/in/sethusaran"
+        }]
+    },
+    "work": [{
+        "name": "Follo",
+        "position": "Web Developer",
+        "url": "https://thefollo.com",
+        "startDate": "2020-01-01",
+        "endDate": "2021-01-01",
+        "summary": "Description…",
+        "highlights": [
+            "Started the company"
+        ]
+    }],
+    "volunteer": [{
+        "organization": "Kriger Groups",
+        "position": "Volunteer",
+        "url": "https://kriger.com/",
+        "startDate": "2012-01-01",
+        "endDate": "2013-01-01",
+        "summary": "Description…",
+        "highlights": [
+            "Awarded 'Volunteer of the Month'"
+        ]
+    }],
+    "education": [{
+        "institution": "Excel Engineering College",
+        "url": "https://excelinstitutions.com/",
+        "area": "Computer Science",
+        "studyType": "Bachelor",
+        "startDate": "2013-01-01",
+        "endDate": "2017-01-01",
+        "percentage": "70",
+        "courses": [
+            "DB1101 - Basic SQL"
+        ]
+    }],
+    "awards": [{
+        "title": "Best Performer",
+        "date": "2020-11-01",
+        "awarder": "Follo",
+        "summary": "Best Performer of the year."
+    }],
+
+    "skills": [{
+        "name": "Web Development",
+        "level": "Master",
+        "keywords": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    }],
+    "languages": [{
+        "language": "English",
+        "fluency": "Professional"
+    }],
+    "interests": [{
+        "name": "Wildlife",
+        "keywords": [
+            "Photography",
+            "Travel"
+        ]
+    }],
+    "references": [{
+        "name": "Jane Doe",
+        "reference": "Reference…"
+    }],
+    "projects": [{
+        "name": "Tracking",
+        "description": "Logistics Tracking......description",
+        "highlights": [
+            "Won award at Malaysia Contest 2020"
+        ],
+        "keywords": [
+            "HTML"
+        ],
+        "startDate": "2020-01-01",
+        "endDate": "2021-01-01",
+        "url": "https://myepod.com/",
+        "roles": [
+            "Team Lead"
+        ],
+        "entity": "Entity",
+        "type": "application"
+    }]
+}
