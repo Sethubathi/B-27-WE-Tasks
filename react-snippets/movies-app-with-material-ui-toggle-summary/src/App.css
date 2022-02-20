@@ -1,0 +1,58 @@
+.App{
+  text-align: center;
+}
+.width{
+  width:100%;
+  height:280px;
+}
+.add-form{
+  display:flex;
+  flex-direction:column ;
+  gap:10px;
+}
+.add-form>input,button{
+  font-size:18px;
+  margin-left:10px;
+  margin-right:10px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 280px;
+ 
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid rgb(140, 171, 207);
+  background-color: rgb(198, 225, 241);
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 5px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 15px;
+}
