@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import Badge from '@mui/material/Badge';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import "./App.css";
 //Importing bootstrap and other modules
 //import 'bootstrap/dist/css/bootstrap.min.css';
-
+import IconButton from '@mui/material/IconButton';
 export default function App() {
   const [name, setName] = useState(" ");
   const [rating, setRating] = useState(" ");
@@ -32,7 +35,7 @@ export default function App() {
       poster:
         "https://d2e111jq13me73.cloudfront.net/sites/default/files/styles/product_image_aspect_switcher_170w/public/product-images/csm-movie/rednotice-movie-poster-image.jpg?itok=BUsN3-P7",
       summary:
-        " Red Notice is a globetrotting action-adventure starring Ryan Reynolds, Gal Gadot, and Dwayne Johnson. Expect lots of action violence: Characters fight,  hit, and they get  chased and tossed."
+        " Red Notice is a globetrotting action-adventure starring Ryan Reynolds, Gal Gadot, and Dwayne Johnson. Expect lots of action violence: Characters fight,  hit, and they get  chased and by the tossed."
     },
     {
       name: "Hera Pheri",
@@ -48,7 +51,7 @@ export default function App() {
       poster:
         "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeQTJK-aG3Z5HF_M5giJZ1gyI0QgXy1Y7XM3o4bP0sSL0A8JBK",
       summary:
-        "M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially tries to please his father by working for the Indian Railways, he ultimately decides to chase his dreams."
+        "M S Dhoni, a boy from Ranchi, aspires to play cricket for India. Though he initially tries to please his father by working for the Indian Railways, he ultimately decides to chase his dreams by all."
     }
   ]);
   return (
@@ -102,20 +105,19 @@ function Counter({ name, poster, summary, rating }) {
     <div>
       <div className="columns">
         <ul className="price">
-          <li className="header">{name}</li>
+          {/* <li className="header">{name}</li> */}
          
           <li>
             <img src={poster} className="width" alt={name} />
           </li>
-          <li>
-          <Button variant="outlined" onClick={()=>setShow(!show)} color="secondary">
-          Toggle Summary
-</Button>
-           </li>
-          <li className="grey" ><span style={summaryStyle}>{summary}</span></li>
+         
+          <li className="grey" ><b>{name}</b> <IconButton onClick={()=>setShow(!show)} area-aria-label="toggle">
+            {show ? <ExpandLessIcon  /> : <ExpandMoreIcon  />}
+              
+            </IconButton>{" "}<span style={summaryStyle}>{summary}</span></li>
 
           <li>Rating : <span style={{color:color}}>{ratingg}</span> </li>
-          <li><Counter1 /></li>
+          <li style={{margin:'10px'}}><Counter1 /></li>
         </ul>
         
       </div>
@@ -127,20 +129,19 @@ function Counter1() {
   const [dislike, setDislike] = useState(0);
   return (
     <div>
-      <button
-        onClick={() => {
+      <Badge  onClick={() => {
           setLike(like + 1);
-        }}
-      >
-        {like} 👍
-      </button>
-      <button
-        onClick={() => {
+        }} color="secondary" badgeContent={like}>
+      👍
+</Badge>
+
+
+<Badge style={{marginLeft:'5%'}}  onClick={() => {
           setDislike(dislike + 1);
-        }}
-      >
-        {dislike} 👎
-      </button>
+        }} color="error" badgeContent={dislike}>
+     👎
+</Badge>
+     
       {/* <h2> </h2> */}
     </div>
   );

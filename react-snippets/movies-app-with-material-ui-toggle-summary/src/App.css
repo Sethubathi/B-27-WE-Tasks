@@ -29,7 +29,7 @@
 .price {
   list-style-type: none;
   border: 1px solid rgb(140, 171, 207);
-  background-color: rgb(198, 225, 241);
+  /* background-color: rgb(198, 225, 241); */
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;
@@ -48,7 +48,7 @@
 
 .price li {
   border-bottom: 1px solid #eee;
-  padding: 5px;
+  /* padding: 5px; */
   text-align: center;
 }
 
